@@ -1,0 +1,142 @@
+.header-logo {
+  position: relative;
+  max-width: 20%;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+h1.my-name {
+  position: relative;
+  float: right;
+  display: inline-block;
+  color: #2d3c49;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.75em;
+}
+
+h3.my-name-tagline {
+  display: inline-block;
+  position: relative;
+  float: right;
+  color: #2d3c49;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25em;
+  bottom: 40px;
+}
+
+hr {
+  color: #7d97ad;
+  border-top-width: 2px;
+  min-width: 100%
+}
+
+.main-image {
+  max-width: 100%;
+}
+
+.featured-work-header {
+  text-align: center;
+  color: #7d97ad;
+}
+
+.work-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  color: #2d3c49;
+}
+
+.featured-image {
+  max-width: 100%;
+}
+
+/*everything above this is mobile layout.*/
+
+@media screen and (min-width: 650px) {
+  h1.my-name {
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h3.my-name-tagline {
+    font-size: 2em;
+    bottom: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h2 {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  p {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+/*above this is tablet layout*/
+
+@media screen and (min-width: 800px) {
+  .work-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    color: #2d3c49;
+  }
+
+  .featured-image {
+    max-width: 405px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-height: 253px;
+    min-height: 253px;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 3em;
+    padding-right: 20px;;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h2 {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  p {
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .header-logo {
+    position: relative;
+    max-width: 10%;
+    padding-left: 60px;
+    padding-top: 10px;
+  }
+
+  .main-image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  h2.featured-work-header {
+    font-size: 3em;
+    float: left;
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  hr {
+    border-top-width: 3px;
+    margin-bottom: 20px;
+  }
+}
