@@ -1,0 +1,77 @@
+.featured-work-image {
+  max-width: 100%;
+}
+
+.udacity-logo {
+  max-width: 60%;
+  min-width: 45%;
+  margin-top: 20px;
+}
+
+.header-text {
+  max-width: 95%;
+  margin-top: 20px;
+  font-size: 60px;
+  color: #2d3c49;
+}
+
+.header-text-tagline {
+  max-width: 95%;
+  margin-top: 20px;
+  font-size: 40px;
+  color: #2d3c49;
+}
+
+.featured-work {
+  font-size: 60px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  color: #7d97ad;
+}
+
+.work-title {
+  font-size: 40px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #2d3c49;
+}
+
+.work-url {
+  font-size: 25px;
+  max-width: 100%;
+  color: #2d3c49;
+}
+
+.hr-tag {
+  border-top: 4px solid #7d97ad;
+  margin: 30px;
+}
+
+.hero-image {
+  max-width: 95%;
+  max-height: 50%;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.fa-linkedin-square {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .header-text {
+      text-align: center;
+    }
+    .header-text-tagline {
+      text-align: center;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .header-text {
+      text-align: right;
+    }
+    .header-text-tagline {
+      text-align: right;
+    }
+}
