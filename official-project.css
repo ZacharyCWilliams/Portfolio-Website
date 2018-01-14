@@ -9,14 +9,14 @@
 }
 
 .header-text {
-  max-width: 90%;
+  max-width: 95%;
   margin-top: 20px;
   font-size: 60px;
   color: #2d3c49;
 }
 
 .header-text-tagline {
-  max-width: 90%;
+  max-width: 95%;
   margin-top: 20px;
   font-size: 40px;
   color: #2d3c49;
@@ -52,4 +52,26 @@
   max-height: 50%;
   margin-top: 10px;
   margin-bottom: 35px;
+}
+
+.fa-linkedin-square {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .header-text {
+      text-align: center;
+    }
+    .header-text-tagline {
+      text-align: center;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .header-text {
+      text-align: right;
+    }
+    .header-text-tagline {
+      text-align: right;
+    }
 }
