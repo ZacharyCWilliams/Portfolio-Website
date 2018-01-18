@@ -5,75 +5,155 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/official-project.css">
-    <script src="https://use.fontawesome.com/944fd7460d.js"></script>
-    <title>p1</title>
+    <link rel="stylesheet" href="css/portfolio.css">
+    <title>Portfolio Website</title>
   </head>
-  <body>
-    <!-- grid creation -->
-    <div class="container">
-      <header>
-        <!-- devoting 4 columns to udacity logo leaving 8 for header text and tagline -->
-        <div class="row">
-          <div class="col-xs-4 col-xs-offset-4 col-md-4 col-md-offset-0">
-            <img class="udacity-logo" src="https://cdn.worldvectorlogo.com/logos/udacity.svg" alt="udacity-logo">
-          </div>
-          <div class="col-xs-12 col-md-8">
-            <h1 class="header-text">Zachary Williams</h1>
-            <h3 class="header-text-tagline">Front-End Ninja</h3>
-          </div>
+  <body class="body">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Portfolio Website</a>
         </div>
-        <!-- thematic change incoming -->
-        <div class="row">
-          <div class="col-xs-12 clearfix">
-            <hr class="hr-tag">
-          </div>
-        </div>
-      </header>
-    <!-- 12 columns going to hero image (guy holding cellphone) -->
-    <div class="row">
-      <div class="text-center col-xs-12">
-        <img class="hero-image"  src="https://technologypartners.adobe.com/content/dam/tep_assets/images/tech_home_hero_banner1.jpg" alt="Tech Banner">
-      </div>
-    </div>
-    <section>
-      <!-- another 12 columns going to featured work title -->
-      <div class="row">
-        <div class="col-xs-12">
-          <h2 class="text-center featured-work">Featured Work</h2>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item"><a href="#home-section">Home</a></li>
+            <li class="nav-item"><a href="#featured-work-head-section">Featured Work</a></li>
+            <li class="nav-item"><a href="https://github.com/ZacharyCWilliams/" target="_blank">Github</a></li>
+            <li class="nav-item"><a href="#social-media-icons">Social Media</a></li>
+          </ul>
         </div>
       </div>
-      <!-- images, titles, and url's of projects in portfolio -->
-      <article>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <img class="featured-work-image" src="http://static1.businessinsider.com/image/55b8da832acae78b0e8bad71/the-most-expensive-homes-for-sale-in-silicon-valley-right-now.jpg" alt="mansion">
-          <h3 class="text-center work-title">APPIFY</h3>
-          <p class="text-center work-url">https://github.com/Appify/</p>
+    </nav>
+    <!-- BACKGROUND IMAGE & DARK OVERLAY -->
+    <div id="background">
+      <div class="dark-overlay">
+      <!-- HEADER/HOME SECTION -->
+      <header id="home-section">
+          <!-- PUSHING CONTENT DOWN 50PX -->
+          <div class="home-inner">
+            <div class="container">
+              <div class="row">
+                <!-- LOGO -->
+                <div class="col-sm-5 text-center">
+                  <img class="udacity-logo" src="https://cdn.worldvectorlogo.com/logos/udacity.svg" alt="udacity logo">
+                </div>
+                <!-- NAME & TAGLINE -->
+                <div class="col-sm-7 text-center">
+                  <h1 class="display-4 name">Zachary Williams</h1>
+                  <h3 class="tagline">Front-End-Ninja</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- LINKEDIN PROFILE PICTURE SECTION -->
+        <div class="container">
+          <section id="my-linked-in-picture">
+            <div class="row">
+              <div class="col-xs-12 text-center">
+                  <img class="img-fluid profile-pic img-circle img-thumbnail" src="img/LinkedInProfilePic.jpg" alt="Profile Picture">
+              </div>
+            </div>
+          </section>
         </div>
-      </article>
-      <article>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <img class="featured-work-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Earth%27s_northern_hemisphere_with_sea_ice_and_clouds.jpg/1024px-Earth%27s_northern_hemisphere_with_sea_ice_and_clouds.jpg" alt="earth">
-          <h3 class="text-center work-title">FLOWER</h3>
-          <p class="text-center work-url">https://github.com/Sunflower/</p>
+        <!-- FEATURED WORK TITLE -->
+        <section class="container">
+          <section id="featured-work-head-section">
+            <div class="container">
+              <div class="row">
+                <div class="col text-center">
+                  <div class="p-5">
+                    <h2 class="display-4 featured-title">Featured Work</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- FEATURED WORK CONTENT GRID-->
+          <section id="featured-work-content-section">
+            <div class="container">
+              <!-- TOP CONTENT ROW -->
+              <div class="row">
+                <!-- APPIFY CONTENT -->
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                  <article class="appify">
+                    <img class="picture-content" src="img/iceland.jpeg" alt="iceland">
+                    <h3 class="featured-work-project-title">APPIFY</h3>
+                    <p class="lead">https://github.com/Appify/</p>
+                  </article>
+                </div>
+                <!-- SUNFLOWER CONTENT -->
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                  <article class="sunflower">
+                    <img class="picture-content" src="img/sunset.jpeg" alt="sunset">
+                    <h3 class="featured-work-project-title">SUNFLOWER</h3>
+                    <p class="lead">https://github.com/Sunflower/</p>
+                  </article>
+                </div>
+                <!-- BOKEH CONTENT -->
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0 text-center">
+                  <article class="bokeh">
+                    <img class="picture-content" src="img/palace.jpeg" alt="palace">
+                    <h3 class="featured-work-project-title">BOKEH</h3>
+                    <p class="lead">https://github.com/Bokeh/</p>
+                  </article>
+                </div>
+              </div>
+              <!-- BOTTOM CONTENT ROW -->
+              <div class="row">
+                <!-- PHONEZONE CONTENT -->
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                  <article class="phonezone">
+                    <img class="picture-content" src="img/lion.jpeg" alt="lion">
+                    <h3 class="featured-work-project-title">PHONEZONE</h3>
+                    <p class="lead">https://github.com/Phonezone/</p>
+                  </article>
+                </div>
+                <!-- CATWORLD CONTENT -->
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+                  <article class="catworld">
+                    <img class="picture-content" src="img/nature.jpeg" alt="nature">
+                    <h3 class="featured-work-project-title">CATWORLD</h3>
+                    <p class="lead">https://github.com/Catworld/</p>
+                  </article>
+                </div>
+                <!-- ALPHABET-TRIBE CONTENT -->
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0 text-center">
+                  <article class="alphabet-tribe">
+                    <img class="picture-content" src="img/couple.jpeg" alt="couple">
+                    <h3 class="featured-work-project-title">ALPHABET TRIBE</h3>
+                    <p class="lead">https://github.com/AlphabetTribe/</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- FOOTER CONSISTING OF SOCIAL MEDIA ICONS -->
+          <footer id="social-media-icons">
+            <div class="container">
+              <div class='col-xs-12 text-center'>
+                <a href='https://www.linkedin.com/in/zachary-currell-williams/' target="_blank">
+                  <i class="fa fa-linkedin-square fa-2x linked-icon" aria-hidden="true"></i>
+                </a>
+                <a href='https://www.github.com/ZacharyCWilliams/' target="_blank">
+                  <i class="fa fa-github  fa-2x ghub" aria-hidden="true"></i>
+                </a>
+                <a href='https://twitter.com/ZacharyCurrell' target="_blank">
+                  <i class="fa fa-twitter  fa-2x twitter-icon" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </footer>
+        </section>
         </div>
-      </article>
-      <article>
-        <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
-          <img class="featured-work-image" src="https://www.ahstatic.com/photos/2783_rsr001_00_p_1024x768.jpg" alt="restaurant">
-          <h3 class="text-center work-title">BOKEH</h3>
-          <p class="text-center work-url">https://github.com/Bokeh/</p>
-        </div>
-      </article>
-    </div>
-  </section>
-  <footer>
-    <div class='col-xs-12 text-center linked-in-icon'>
-      <a href='https://www.linkedin.com/in/zachary-currell-williams/' target="_blank">
-        <i class="fa fa-linkedin-square  fa-2x" aria-hidden="true"></i>
-      </a>
-    </div>
-  </footer>
+      </div>
+    <script src="https://use.fontawesome.com/944fd7460d.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>
