@@ -6,5 +6,5 @@ This responsive portfolio website is my first Front-End Web Dev Nanodegree Udaci
 
 1. Open up [RawGit] (https://rawgit.com/)
 
-2. Paste `https://github.com/ZacharyCWilliams/Portfolio-Website/blob/master/official-project.html` into the paste bar
+2. Paste `https://github.com/ZacharyCWilliams/Portfolio-Website/blob/master/portfolio.html` into the paste bar
 
